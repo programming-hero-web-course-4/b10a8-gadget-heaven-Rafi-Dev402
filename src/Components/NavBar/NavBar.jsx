@@ -7,14 +7,14 @@ const NavBar = () => {
 
     const navLinks = <>
 
-        <li><NavLink className="text-lg font-semibold text-[#0B0B0BB3]" to={'/home'}>Home</NavLink></li>
+        <li><NavLink className="text-lg font-semibold text-[#0B0B0BB3]" to={'/'}>Home</NavLink></li>
         <li><NavLink className="text-lg font-semibold text-[#0B0B0BB3]" to={'/Statistics'}>Statistics</NavLink></li>
         <li><NavLink className="text-lg font-semibold text-[#0B0B0BB3]" to={'/Dashboard'}>Dashboard</NavLink></li>
 
     </>
     return (
-        <div className="bg-base-300">
-            <div className="container md:container lg:container mx-auto py-7 ">
+        <div className="">
+            <div className="lg:w-9/12   mx-auto py-7 px-2">
 
                 <div className="navbar ">
                     <div className="navbar-start">
@@ -68,7 +68,7 @@ const NavBar = () => {
                                 <MdFavoriteBorder className="text-2xl" />
                             </div>
                             <div className="-mt-2 -ml-2">
-                                <span className=" bg-gray-50 p-1 rounded-full font-bold text-lg">0</span>
+                                <span className=" bg-gray-50 p-1 rounded-full font-bold text-lg">5</span>
                             </div>
                         </div>
 
