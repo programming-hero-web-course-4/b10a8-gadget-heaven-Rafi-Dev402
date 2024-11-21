@@ -1,0 +1,400 @@
+[
+    
+    {
+      "product_id": "P001",
+      "product_title": "Vivo V27 Pro",
+      "product_image": "vivo_v27_pro.jpg",
+      "category": "Phone",
+      "price": 499,
+      "description": "A stylish phone with excellent camera performance.",
+      "specification": ["6.7-inch AMOLED", "128GB Storage", "4500mAh Battery", "MediaTek Dimensity 8200"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "P002",
+      "product_title": "Xiaomi 13 Pro",
+      "product_image": "xiaomi_13_pro.jpg",
+      "category": "Phone",
+      "price": 649,
+      "description": "A powerful smartphone with cutting-edge features.",
+      "specification": ["6.6-inch AMOLED", "256GB Storage", "5000mAh Battery", "Qualcomm Snapdragon 8 Gen 2"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "P003",
+      "product_title": "Realme GT Neo 5",
+      "product_image": "realme_gt_neo_5.jpg",
+      "category": "Phone",
+      "price": 399,
+      "description": "A performance-focused phone with fast charging.",
+      "specification": ["6.8-inch AMOLED", "128GB Storage", "4600mAh Battery", "Qualcomm Snapdragon 7+ Gen 1"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "P004",
+      "product_title": "Samsung Galaxy S23 Ultra",
+      "product_image": "samsung_galaxy_s23_ultra.jpg",
+      "category": "Phone",
+      "price": 1199,
+      "description": "Premium smartphone with a superior camera setup.",
+      "specification": ["6.8-inch AMOLED", "512GB Storage", "5000mAh Battery", "Qualcomm Snapdragon 8 Gen 2 for Galaxy"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "P005",
+      "product_title": "OnePlus 11",
+      "product_image": "oneplus_11.jpg",
+      "category": "Phone",
+      "price": 799,
+      "description": "A flagship phone with ultra-fast performance.",
+      "specification": ["6.7-inch AMOLED", "256GB Storage", "5000mAh Battery", "Qualcomm Snapdragon 8 Gen 2"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "P006",
+      "product_title": "Google Pixel 7 Pro",
+      "product_image": "google_pixel_7_pro.jpg",
+      "category": "Phone",
+      "price": 899,
+      "description": "An AI-powered smartphone with incredible camera quality.",
+      "specification": ["6.7-inch OLED", "128GB Storage", "5000mAh Battery", "Google Tensor G2"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "P007",
+      "product_title": "Honor Magic 5 Pro",
+      "product_image": "honor_magic_5_pro.jpg",
+      "category": "Phone",
+      "price": 1099,
+      "description": "A luxurious smartphone with state-of-the-art features.",
+      "specification": ["6.81-inch AMOLED", "256GB Storage", "5100mAh Battery", "Snapdragon 8 Gen 2"],
+      "availability": true,
+      "rating": 4.9
+    },
+
+    
+    {
+      "product_id": "L001",
+      "product_title": "ASUS ZenBook Pro",
+      "product_image": "asus_zenbook_pro.jpg",
+      "category": "Laptop",
+      "price": 1499,
+      "description": "A high-performance laptop for professionals.",
+      "specification": ["15.6-inch OLED", "Intel i9", "16GB RAM", "1TB SSD", "12 Cores / 24 Threads", "Base Clock: 3.5GHz, Boost Clock: 5.1GHz"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "L002",
+      "product_title": "HP Spectre x360",
+      "product_image": "hp_spectre_x360.jpg",
+      "category": "Laptop",
+      "price": 1399,
+      "description": "Convertible laptop with a stunning design.",
+      "specification": ["14-inch AMOLED", "Intel i7", "16GB RAM", "512GB SSD", "8 Cores / 16 Threads", "Base Clock: 2.8GHz, Boost Clock: 4.7GHz"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "L003",
+      "product_title": "Acer Aspire 7",
+      "product_image": "acer_aspire_7.jpg",
+      "category": "Laptop",
+      "price": 799,
+      "description": "Affordable laptop with solid performance.",
+      "specification": ["15.6-inch LCD", "AMD Ryzen 5", "8GB RAM", "256GB SSD", "6 Cores / 12 Threads", "Base Clock: 3.0GHz, Boost Clock: 4.2GHz"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "L004",
+      "product_title": "Dell XPS 13",
+      "product_image": "dell_xps_13.jpg",
+      "category": "Laptop",
+      "price": 1299,
+      "description": "A premium ultrabook with an edge-to-edge display.",
+      "specification": ["13.4-inch OLED", "Intel i7", "16GB RAM", "1TB SSD", "8 Cores / 16 Threads", "Base Clock: 2.4GHz, Boost Clock: 4.6GHz"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "L005",
+      "product_title": "Lenovo ThinkPad X1 Carbon",
+      "product_image": "lenovo_thinkpad_x1_carbon.jpg",
+      "category": "Laptop",
+      "price": 1699,
+      "description": "A durable business laptop with powerful performance.",
+      "specification": ["14-inch WQHD", "Intel i7", "16GB RAM", "1TB SSD", "8 Cores / 16 Threads", "Base Clock: 2.3GHz, Boost Clock: 4.8GHz"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "L006",
+      "product_title": "MSI Creator Z16",
+      "product_image": "msi_creator_z16.jpg",
+      "category": "Laptop",
+      "price": 1999,
+      "description": "A powerful laptop for creators and designers.",
+      "specification": ["16-inch QHD+", "Intel i9", "32GB RAM", "2TB SSD", "14 Cores / 20 Threads", "Base Clock: 3.2GHz, Boost Clock: 5.0GHz"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "L007",
+      "product_title": "Razer Blade 14",
+      "product_image": "razer_blade_14.jpg",
+      "category": "Laptop",
+      "price": 2199,
+      "description": "A compact gaming laptop with a sleek design.",
+      "specification": ["14-inch QHD", "AMD Ryzen 9", "16GB RAM", "1TB SSD", "8 Cores / 16 Threads", "Base Clock: 3.3GHz, Boost Clock: 4.9GHz"],
+      "availability": true,
+      "rating": 4.8
+    },
+
+    
+    {
+        "product_id": "S001",
+        "product_title": "Samsung Galaxy Watch 6",
+        "product_image": "samsung_galaxy_watch_6.jpg",
+        "category": "Smartwatch",
+        "price": 349,
+        "description": "A premium smartwatch with advanced fitness tracking.",
+        "specification": ["1.4-inch AMOLED", "Bluetooth 5.3", "Battery: 40 hours", "Waterproof: 5ATM", "Samsung Exynos W930"],
+        "availability": true,
+        "rating": 4.8
+      },
+
+
+      {
+        "product_id": "S002",
+        "product_title": "Apple Watch Series 9",
+        "product_image": "apple_watch_series_9.jpg",
+        "category": "Smartwatch",
+        "price": 399,
+        "description": "The most advanced smartwatch with unparalleled performance.",
+        "specification": ["1.9-inch LTPO OLED", "S9 Chip", "Battery: 18 hours", "Waterproof: 50m", "Health Monitoring: ECG, SpO2"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "S003",
+        "product_title": "Haylou Solar Plus RT3",
+        "product_image": "haylou_solar_plus_rt3.jpg",
+        "category": "Smartwatch",
+        "price": 79,
+        "description": "Affordable smartwatch with essential fitness tracking.",
+        "specification": ["1.43-inch AMOLED", "Bluetooth 5.0", "Battery: 7 days", "Waterproof: IP68", "Heart Rate Monitoring"],
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": "S004",
+        "product_title": "Garmin Forerunner 965",
+        "product_image": "garmin_forerunner_965.jpg",
+        "category": "Smartwatch",
+        "price": 599,
+        "description": "Best choice for athletes and outdoor enthusiasts.",
+        "specification": ["1.4-inch AMOLED", "GPS", "Battery: 15 days", "Waterproof: 5ATM", "VO2 Max Tracking"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "S005",
+        "product_title": "Fossil Gen 6",
+        "product_image": "fossil_gen_6.jpg",
+        "category": "Smartwatch",
+        "price": 299,
+        "description": "A stylish smartwatch with Wear OS.",
+        "specification": ["1.28-inch AMOLED", "Snapdragon Wear 4100+", "Battery: 24 hours", "Waterproof: 3ATM", "SpO2 Tracking"],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "S006",
+        "product_title": "Amazfit GTR 4",
+        "product_image": "amazfit_gtr_4.jpg",
+        "category": "Smartwatch",
+        "price": 199,
+        "description": "Feature-packed smartwatch for daily fitness tracking.",
+        "specification": ["1.43-inch AMOLED", "Bluetooth 5.0", "Battery: 14 days", "Waterproof: 5ATM", "BioTracker 4.0"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "S007",
+        "product_title": "Fitbit Sense 2",
+        "product_image": "fitbit_sense_2.jpg",
+        "category": "Smartwatch",
+        "price": 249,
+        "description": "A smartwatch focused on health and wellness.",
+        "specification": ["1.58-inch AMOLED", "Bluetooth 5.1", "Battery: 6 days", "Waterproof: 50m", "Stress Management Tools"],
+        "availability": true,
+        "rating": 4.6
+      },
+
+      
+      {
+        "product_id": "I001",
+        "product_title": "iPhone 15 Pro Max",
+        "product_image": "iphone_15_pro_max.jpg",
+        "category": "iPhone",
+        "price": 1299,
+        "description": "The most powerful iPhone with advanced camera features.",
+        "specification": ["6.7-inch LTPO Super Retina XDR", "A17 Bionic", "256GB Storage", "Titanium Body", "Battery: 29 hours"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "I002",
+        "product_title": "iPhone 15 Plus",
+        "product_image": "iphone_15_plus.jpg",
+        "category": "iPhone",
+        "price": 899,
+        "description": "A large-screen iPhone with great performance.",
+        "specification": ["6.7-inch Super Retina XDR", "A16 Bionic", "128GB Storage", "Aluminum Body", "Battery: 26 hours"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "I003",
+        "product_title": "iPhone 14 Pro",
+        "product_image": "iphone_14_pro.jpg",
+        "category": "iPhone",
+        "price": 999,
+        "description": "A powerful iPhone with an advanced camera system.",
+        "specification": ["6.1-inch Super Retina XDR", "A16 Bionic", "128GB Storage", "Dynamic Island", "Battery: 23 hours"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "I004",
+        "product_title": "iPhone 14",
+        "product_image": "iphone_14.jpg",
+        "category": "iPhone",
+        "price": 799,
+        "description": "A budget-friendly iPhone with exceptional features.",
+        "specification": ["6.1-inch Super Retina XDR", "A15 Bionic", "128GB Storage", "Ceramic Shield", "Battery: 20 hours"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "I005",
+        "product_title": "iPhone SE (3rd Gen)",
+        "product_image": "iphone_se_3.jpg",
+        "category": "iPhone",
+        "price": 429,
+        "description": "Compact and affordable with powerful performance.",
+        "specification": ["4.7-inch Retina HD", "A15 Bionic", "64GB Storage", "Touch ID", "Battery: 15 hours"],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "I006",
+        "product_title": "iPhone 13 Pro Max",
+        "product_image": "iphone_13_pro_max.jpg",
+        "category": "iPhone",
+        "price": 1099,
+        "description": "A large-screen iPhone with professional-grade cameras.",
+        "specification": ["6.7-inch Super Retina XDR", "A15 Bionic", "256GB Storage", "ProMotion 120Hz", "Battery: 28 hours"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "I007",
+        "product_title": "iPhone 13 Mini",
+        "product_image": "iphone_13_mini.jpg",
+        "category": "iPhone",
+        "price": 699,
+        "description": "A compact iPhone with great features.",
+        "specification": ["5.4-inch Super Retina XDR", "A15 Bionic", "128GB Storage", "Ceramic Shield", "Battery: 17 hours"],
+        "availability": true,
+        "rating": 4.7
+      },
+
+
+      {
+        "product_id": "M001",
+        "product_title": "MacBook Air M2",
+        "product_image": "macbook_air_m2.jpg",
+        "category": "MacBook",
+        "price": 1199,
+        "description": "Lightweight laptop with M2 chip for everyday productivity.",
+        "specification": ["13.6-inch Retina Display", "M2 Chip", "8GB RAM", "256GB SSD", "Battery: 18 hours"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "M002",
+        "product_title": "MacBook Pro 14-inch M2 Pro",
+        "product_image": "macbook_pro_14_m2_pro.jpg",
+        "category": "MacBook",
+        "price": 1999,
+        "description": "A compact MacBook for professionals.",
+        "specification": ["14.2-inch Liquid Retina XDR", "M2 Pro Chip", "16GB RAM", "512GB SSD", "Battery: 17 hours"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "M003",
+        "product_title": "MacBook Pro 16-inch M2 Max",
+        "product_image": "macbook_pro_16_m2_max.jpg",
+        "category": "MacBook",
+        "price": 3299,
+        "description": "A high-performance laptop for demanding tasks.",
+        "specification": ["16.2-inch Liquid Retina XDR", "M2 Max Chip", "32GB RAM", "1TB SSD", "Battery: 22 hours"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "M004",
+        "product_title": "MacBook Air M1",
+        "product_image": "macbook_air_m1.jpg",
+        "category": "MacBook",
+        "price": 999,
+        "description": "An affordable MacBook with excellent performance.",
+        "specification": ["13.3-inch Retina Display", "M1 Chip", "8GB RAM", "256GB SSD", "Battery: 18 hours"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "M005",
+        "product_title": "MacBook Pro 13-inch M2",
+        "product_image": "macbook_pro_13_m2.jpg",
+        "category": "MacBook",
+        "price": 1299,
+        "description": "Compact and powerful laptop with the M2 chip.",
+        "specification": ["13.3-inch Retina Display", "M2 Chip", "8GB RAM", "256GB SSD", "Battery: 20 hours"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "M006",
+        "product_title": "MacBook Pro 16-inch M1 Pro",
+        "product_image": "macbook_pro_16_m1_pro.jpg",
+        "category": "MacBook",
+        "price": 2499,
+        "description": "Large display MacBook with professional-grade performance.",
+        "specification": ["16.2-inch Liquid Retina XDR", "M1 Pro Chip", "16GB RAM", "512GB SSD", "Battery: 21 hours"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "M007",
+        "product_title": "MacBook Air 15-inch M2",
+        "product_image": "macbook_air_15_m2.jpg",
+        "category": "MacBook",
+        "price": 1399,
+        "description": "A larger MacBook Air for improved productivity.",
+        "specification": ["15.3-inch Retina Display", "M2 Chip", "8GB RAM", "512GB SSD", "Battery: 18 hours"],
+        "availability": true,
+        "rating": 4.8
+      }
+
+    
+  ]
