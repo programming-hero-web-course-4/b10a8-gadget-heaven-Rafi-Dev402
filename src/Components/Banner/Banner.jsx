@@ -11,7 +11,7 @@ const Banner = () => {
                     </div>
 
                     <div className='mb-8 lg:w-[790px] mx-auto'>
-                        <p className='text-center text-white text-lg font-medium'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+                        <p className='text-center text-white md:text-base lg:text-lg font-medium'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
                     </div>
 
                     <div className='flex justify-center items-center '>
@@ -23,7 +23,7 @@ const Banner = () => {
 
             {/* Image Div */}
             <div className='flex justify-center items-center -mt-28 md:-mt-64 lg:-mt-64 '>
-                <img className=' w-[300px] md:w-[700px] lg:w-4/6 lg:h-[730px] object-cover rounded-[32px] p-3 md:p-3 lg:p-5 backdrop-blur-md border' src={BannerImg} alt="" />
+                <img className=' w-[300px] md:w-[700px] lg:w-[1300px] lg:h-[730px] object-cover rounded-[32px] p-3 md:p-3 lg:p-5 backdrop-blur-md border' src={BannerImg} alt="" />
             </div>
 
         </div>
