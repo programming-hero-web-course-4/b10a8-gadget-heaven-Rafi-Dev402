@@ -18,7 +18,8 @@ const Home = () => {
                 <div className=" lg:w-3/12 mx-auto">
 
                     <div className="bg-white rounded-2xl">
-                        <h2 className="text-[#0B0B0B] text-2xl font-semibold text-center pt-5">All Categorys</h2>
+                        <h2 className="text-[#0B0B0B] text-xl font-semibold text-center pt-5">All Categories</h2>
+                        
                         <div className="border-base-200  mx-auto   grid grid-cols-2 md:grid-cols-3 lg:grid-cols-1 gap-5 p-6">
 
 

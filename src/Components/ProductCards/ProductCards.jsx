@@ -31,6 +31,9 @@ const ProductCards = () => {
             {
                 (!category)&&<button onClick={()=> navigate('/AllProducts')} className="btn px-9 bg-green-400  text-xl font-medium">View All</button>
             }
+            {/* {
+                (!category)&&<button onClick={()=> setFilteredproducts(products)} className="btn px-9 bg-green-400  text-xl font-medium">View All</button>
+            } */}
             
         </>
     );
