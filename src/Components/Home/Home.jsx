@@ -1,28 +1,43 @@
 
-import { Link, Outlet, useLoaderData } from "react-router-dom";
+import { NavLink, Outlet, useLoaderData } from "react-router-dom";
 import Banner from "../Banner/Banner";
 
 const Home = () => {
-   const CategoryData = useLoaderData();
-   console.log(CategoryData)
+    const CategoryData = useLoaderData();
+
     return (
         <div>
             {/* Banner */}
             <Banner />
-            <h1 className="text-[#0B0B0B] text-5xl font-bold text-center mb-12">Explore Cutting-Edge Gadgets</h1>
+            <h1 className="text-[#0B0B0B] text-5xl font-bold text-center mb-14">Explore Cutting-Edge Gadgets</h1>
 
             {/* Products Section */}
-            <section className="flex justify-center flex-col md:flex-col lg:flex-row items-center mx-auto gap-8 lg:w-8/12">
+            <section className="flex  flex-col md:flex-col lg:flex-row  mx-auto gap-8 lg:w-8/12">
+
                 {/* Category Buttons */}
-                <div className="border-2 w-2/12 bg-white rounded-2xl flex flex-col gap-5 p-6">
-                    {/* <Link className='font-extrabold text-center  text-lg text-[#09080F99] rounded-full px-3 py-4 bg-[#09080F0D] ' to={'/Laptop'}><button >Laptop</button></Link> */}
-                    {
-                        CategoryData.map(category=> <Link key={category.category} className='font-extrabold text-center  text-lg text-[#09080F99] rounded-full px-3 py-4 bg-[#09080F0D] ' to={`/${category.category}`}><button >{category.category}</button></Link> )
-                    }
+                <div className=" lg:w-3/12 mx-auto">
+
+                    <div className="bg-white rounded-2xl">
+                        <h2 className="text-[#0B0B0B] text-2xl font-semibold text-center pt-5">All Categorys</h2>
+                        <div className="border-base-200  mx-auto   grid grid-cols-2 md:grid-cols-3 lg:grid-cols-1 gap-5 p-6">
+
+
+                            {
+                                CategoryData.map(category => <NavLink
+                                    // className={`font-extrabold text-center  text-lg text-[#09080F99] rounded-full px-3 py-4 bg-[#09080F0D] `  }
+                                    className={({ isActive }) => `border-2  font-bold text-center  text-lg text-[#09080F99] rounded-full px-3 py-4 ${isActive && 'bg-[#9538E2] text-white font-extrabold'}`}
+                                    key={category.category}
+                                    to={`/category/${category.category}`}><button >{category.category}</button>
+                                </NavLink>)
+                            }
+
+                        </div>
+                    </div>
                 </div>
 
+
                 {/* Product Cards */}
-                <div className="border-2 w-10/12">
+                <div className=" w-11/12 border-2 mx-auto">
                     <Outlet></Outlet>
                 </div>
             </section>

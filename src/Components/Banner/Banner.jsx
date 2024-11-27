@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <div className=' mb-28'>
             <div className="lg:w-11/12 mx-auto p-2 backdrop-blur-3xl border-2  rounded-2xl">
-                <div className="bg-[#9538E2] rounded-2xl   h-[560px] md:h-[670px] lg:h-[700px]     ">
+                <div className="bg-[#9538E2] rounded-2xl   h-[560px] md:h-[50px] lg:h-[700px]     ">
 
                     <div className='mb-8 mx-w-[1000px]  md:mx-w-[1000px] lg:w-[1200px] mx-auto pt-24'>
                         <h1 className='text-center text-3xl md:text-4xl lg:text-6xl font-bold text-white'>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
@@ -23,7 +23,7 @@ const Banner = () => {
 
             {/* Image Div */}
             <div className='flex justify-center items-center -mt-28 md:-mt-64 lg:-mt-64 '>
-                <img className=' w-[300px] md:w-[700px] lg:w-[1300px] lg:h-[730px] object-cover rounded-[32px] p-3 md:p-3 lg:p-5 backdrop-blur-md border' src={BannerImg} alt="" />
+                <img className=' w-[300px] md:w-[500px] lg:w-[1300px] lg:h-[650px] object-cover rounded-[32px] p-3 md:p-3 lg:p-5 backdrop-blur-md border' src={BannerImg} alt="" />
             </div>
 
         </div>

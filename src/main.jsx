@@ -11,8 +11,9 @@ import Root from './Components/Root/Root';
 import Home from './Components/Home/Home';
 import Statistics from './Components/Statistics/Statistics';
 import Dashboard from './Components/Dashboard/Dashboard';
-import Phone from './Components/Phone/Phone';
-import Laptop from './Components/Laptop/Laptop';
+
+import ProductCards from './Components/ProductCards/ProductCards';
+import AllProducts from './Components/AllProducts/AllProducts';
 
 const router = createBrowserRouter([
   {
@@ -25,13 +26,16 @@ const router = createBrowserRouter([
         loader: ()=> fetch('./../public/Category.json'),
         children:[
           {
-            path:"/Phone",
-            element:<Phone/>
+            path:"/",
+            element:<ProductCards></ProductCards>,
+            loader: ()=> fetch('../public/Products.json')
           },
           {
-            path:"/Laptop",
-            element:<Laptop/>
+            path:"/category/:category",
+            element:<ProductCards></ProductCards>,
+            loader: ()=> fetch('../public/Products.json')
           },
+          
         ]
         
       },
@@ -42,7 +46,11 @@ const router = createBrowserRouter([
       {
         path:"/Dashboard",
         element:<Dashboard></Dashboard>
-      }
+      },
+      {
+        path:"/AllProducts",
+        element:<AllProducts></AllProducts>
+      },
     ]
   },
 ]);
