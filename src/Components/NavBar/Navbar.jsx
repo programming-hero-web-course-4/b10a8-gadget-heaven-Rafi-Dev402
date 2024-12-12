@@ -14,9 +14,9 @@ const Navbar = () => {
             to='/'>
             Home
         </NavLink></li>
-        <li><NavLink className={({ isActive }) => ` text-lg font-medium mr-5 ${isActive ? 'text-[#9538E2] font-semibold' :  'hover:text-[#9538E2]'}`} to='/Statistics'>Statistics</NavLink></li>
-        <li><NavLink className={({ isActive }) => ` text-lg font-medium mr-5 ${isActive ? 'text-[#9538E2] font-semibold' :  'hover:text-[#9538E2]'}`} to='/Dashboard'>Dashboard</NavLink></li>
-        <li><NavLink className={({ isActive }) => ` text-lg font-medium mr-5 ${isActive ? 'text-[#9538E2] font-semibold' :  'hover:text-[#9538E2]'}`} to='/AllProducts'>All Products</NavLink></li>
+        <li><NavLink className={({ isActive }) => ` text-base font-medium mr-5 ${isActive ? 'text-[#9538E2] font-semibold' :  'hover:text-[#9538E2]'}`} to='/Statistics'>Statistics</NavLink></li>
+        <li><NavLink className={({ isActive }) => ` text-base font-medium mr-5 ${isActive ? 'text-[#9538E2] font-semibold' :  'hover:text-[#9538E2]'}`} to='/Dashboard'>Dashboard</NavLink></li>
+        <li><NavLink className={({ isActive }) => ` text-base font-medium mr-5 ${isActive ? 'text-[#9538E2] font-semibold' :  'hover:text-[#9538E2]'}`} to='/AllProducts'>All Products</NavLink></li>
 
     </>
 

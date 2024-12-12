@@ -3,7 +3,7 @@
     {
       "product_id": "P001",
       "product_title": "Vivo V27 Pro",
-      "product_image": "vivo_v27_pro.jpg",
+      "product_image": "https://i.ibb.co.com/vVpYvQr/Vivo-V27-Pro.jpg",
       "category": "Phone",
       "price": 499,
       "description": "A stylish phone with excellent camera performance.",
@@ -14,7 +14,7 @@
     {
       "product_id": "P002",
       "product_title": "Xiaomi 13 Pro",
-      "product_image": "xiaomi_13_pro.jpg",
+      "product_image": "https://i.ibb.co.com/2ShX08x/Xiaomi-13-Pro-500x500.webp",
       "category": "Phone",
       "price": 649,
       "description": "A powerful smartphone with cutting-edge features.",
@@ -25,7 +25,7 @@
     {
       "product_id": "P003",
       "product_title": "Realme GT Neo 5",
-      "product_image": "realme_gt_neo_5.jpg",
+      "product_image": "https://i.ibb.co.com/5hdHZDb/Realme-GT-Neo-5-Purple.jpg",
       "category": "Phone",
       "price": 399,
       "description": "A performance-focused phone with fast charging.",
@@ -36,7 +36,7 @@
     {
       "product_id": "P004",
       "product_title": "Samsung Galaxy S23 Ultra",
-      "product_image": "samsung_galaxy_s23_ultra.jpg",
+      "product_image": "https://i.ibb.co.com/TWYZx6d/Samsung-Galaxy-S23-Ultra-Green.jpg",
       "category": "Phone",
       "price": 1199,
       "description": "Premium smartphone with a superior camera setup.",
@@ -47,7 +47,7 @@
     {
       "product_id": "P005",
       "product_title": "OnePlus 11",
-      "product_image": "oneplus_11.jpg",
+      "product_image": "https://i.ibb.co.com/d7RpDQQ/One-Plus-Ace-2.jpg",
       "category": "Phone",
       "price": 799,
       "description": "A flagship phone with ultra-fast performance.",
@@ -58,7 +58,7 @@
     {
       "product_id": "P006",
       "product_title": "Google Pixel 7 Pro",
-      "product_image": "google_pixel_7_pro.jpg",
+      "product_image": "https://i.ibb.co.com/N22kCHf/Google-Pixel-7-Pro.jpg",
       "category": "Phone",
       "price": 899,
       "description": "An AI-powered smartphone with incredible camera quality.",
@@ -69,7 +69,7 @@
     {
       "product_id": "P007",
       "product_title": "Honor Magic 5 Pro",
-      "product_image": "honor_magic_5_pro.jpg",
+      "product_image": "https://i.ibb.co.com/2d60GZw/Honor-Magic5-Pro-Green.jpg",
       "category": "Phone",
       "price": 1099,
       "description": "A luxurious smartphone with state-of-the-art features.",
@@ -82,7 +82,7 @@
     {
       "product_id": "L001",
       "product_title": "ASUS ZenBook Pro",
-      "product_image": "asus_zenbook_pro.jpg",
+      "product_image": "https://i.ibb.co.com/TTnNVbZ/zenbook-pro-14-duo-oled-ux8402ze-01-550x550.jpg",
       "category": "Laptop",
       "price": 1499,
       "description": "A high-performance laptop for professionals.",
@@ -93,7 +93,7 @@
     {
       "product_id": "L002",
       "product_title": "HP Spectre x360",
-      "product_image": "hp_spectre_x360.jpg",
+      "product_image": "https://i.ibb.co.com/09QRKCZ/15s-fq2644tu-02-500x500-1-jpg.webp",
       "category": "Laptop",
       "price": 1399,
       "description": "Convertible laptop with a stunning design.",
@@ -104,7 +104,7 @@
     {
       "product_id": "L003",
       "product_title": "Acer Aspire 7",
-      "product_image": "acer_aspire_7.jpg",
+      "product_image": "https://i.ibb.co.com/d6XfZhW/aspire-7-a715-75g-01-550x550.jpg",
       "category": "Laptop",
       "price": 799,
       "description": "Affordable laptop with solid performance.",
@@ -115,7 +115,7 @@
     {
       "product_id": "L004",
       "product_title": "Dell XPS 13",
-      "product_image": "dell_xps_13.jpg",
+      "product_image": "https://i.ibb.co.com/0VKmLNR/dell-xps-13-plus-9320-13th-gen-intel-core-i7-11724233634.webp",
       "category": "Laptop",
       "price": 1299,
       "description": "A premium ultrabook with an edge-to-edge display.",
@@ -126,7 +126,7 @@
     {
       "product_id": "L005",
       "product_title": "Lenovo ThinkPad X1 Carbon",
-      "product_image": "lenovo_thinkpad_x1_carbon.jpg",
+      "product_image": "https://i.ibb.co.com/5jrbbRD/Lenovo-Think-Pad-X1-Carbon-G11-13th-Gen-Intel-Core-i7-1355-U-jpg.webp",
       "category": "Laptop",
       "price": 1699,
       "description": "A durable business laptop with powerful performance.",
@@ -137,7 +137,7 @@
     {
       "product_id": "L006",
       "product_title": "MSI Creator Z16",
-      "product_image": "msi_creator_z16.jpg",
+      "product_image": "https://i.ibb.co.com/WPV5stm/creator-z16-a11uet-03-500x500.jpg",
       "category": "Laptop",
       "price": 1999,
       "description": "A powerful laptop for creators and designers.",
@@ -148,7 +148,7 @@
     {
       "product_id": "L007",
       "product_title": "Razer Blade 14",
-      "product_image": "razer_blade_14.jpg",
+      "product_image": "https://i.ibb.co.com/Hhsdm9Y/Razer-Blade-14-2021-2-678x452.jpg",
       "category": "Laptop",
       "price": 2199,
       "description": "A compact gaming laptop with a sleek design.",
@@ -161,7 +161,7 @@
     {
         "product_id": "S001",
         "product_title": "Samsung Galaxy Watch 6",
-        "product_image": "samsung_galaxy_watch_6.jpg",
+        "product_image": "https://i.ibb.co.com/vd6YsgW/WATCH-6-44-MM-jpg.webp",
         "category": "Smartwatch",
         "price": 349,
         "description": "A premium smartwatch with advanced fitness tracking.",
@@ -174,7 +174,7 @@
       {
         "product_id": "S002",
         "product_title": "Apple Watch Series 9",
-        "product_image": "apple_watch_series_9.jpg",
+        "product_image": "https://i.ibb.co.com/85bdz2V/Apple-Watch-Series-9-3-6716.jpg",
         "category": "Smartwatch",
         "price": 399,
         "description": "The most advanced smartwatch with unparalleled performance.",
@@ -185,7 +185,7 @@
       {
         "product_id": "S003",
         "product_title": "Haylou Solar Plus RT3",
-        "product_image": "haylou_solar_plus_rt3.jpg",
+        "product_image": "https://i.ibb.co.com/QjM3Lsm/haylou-solar-plus-01-500x500.webp",
         "category": "Smartwatch",
         "price": 79,
         "description": "Affordable smartwatch with essential fitness tracking.",
@@ -196,7 +196,7 @@
       {
         "product_id": "S004",
         "product_title": "Garmin Forerunner 965",
-        "product_image": "garmin_forerunner_965.jpg",
+        "product_image": "https://i.ibb.co.com/nPZnfPk/forerunner965-black-cf-lg.webp",
         "category": "Smartwatch",
         "price": 599,
         "description": "Best choice for athletes and outdoor enthusiasts.",
@@ -207,7 +207,7 @@
       {
         "product_id": "S005",
         "product_title": "Fossil Gen 6",
-        "product_image": "fossil_gen_6.jpg",
+        "product_image": "https://i.ibb.co.com/QmpwGXg/fossil-ftw4062v-2.jpg",
         "category": "Smartwatch",
         "price": 299,
         "description": "A stylish smartwatch with Wear OS.",
@@ -218,7 +218,7 @@
       {
         "product_id": "S006",
         "product_title": "Amazfit GTR 4",
-        "product_image": "amazfit_gtr_4.jpg",
+        "product_image": "https://i.ibb.co.com/C0P3kJG/Amazfit-GTR-4-Racetrack-Grey-Nylon-strap-jpg-550x550.jpg",
         "category": "Smartwatch",
         "price": 199,
         "description": "Feature-packed smartwatch for daily fitness tracking.",
@@ -229,7 +229,7 @@
       {
         "product_id": "S007",
         "product_title": "Fitbit Sense 2",
-        "product_image": "fitbit_sense_2.jpg",
+        "product_image": "https://i.ibb.co.com/pdcz077/Fitbit-Sense-2-Advanced-Health-and-Fitness-Smartwatch.jpg",
         "category": "Smartwatch",
         "price": 249,
         "description": "A smartwatch focused on health and wellness.",
@@ -242,7 +242,7 @@
       {
         "product_id": "I001",
         "product_title": "iPhone 15 Pro Max",
-        "product_image": "iphone_15_pro_max.jpg",
+        "product_image": "https://i.ibb.co.com/R60skqs/i-Phone-15-Plus-2-5-1544.jpg",
         "category": "iPhone",
         "price": 1299,
         "description": "The most powerful iPhone with advanced camera features.",
@@ -253,7 +253,7 @@
       {
         "product_id": "I002",
         "product_title": "iPhone 15 Plus",
-        "product_image": "iphone_15_plus.jpg",
+        "product_image": "https://i.ibb.co.com/X7VwnkC/i-Phone-15-Plus-3-8671.jpg",
         "category": "iPhone",
         "price": 899,
         "description": "A large-screen iPhone with great performance.",
@@ -264,7 +264,7 @@
       {
         "product_id": "I003",
         "product_title": "iPhone 14 Pro",
-        "product_image": "iphone_14_pro.jpg",
+        "product_image": "https://i.ibb.co.com/4pXhNrb/Apple-i-Phone-14-Pro-500x500.webp",
         "category": "iPhone",
         "price": 999,
         "description": "A powerful iPhone with an advanced camera system.",
@@ -275,7 +275,7 @@
       {
         "product_id": "I004",
         "product_title": "iPhone 14",
-        "product_image": "iphone_14.jpg",
+        "product_image": "https://i.ibb.co.com/GCvCBhQ/i-Phone-14-Red-5631.jpg",
         "category": "iPhone",
         "price": 799,
         "description": "A budget-friendly iPhone with exceptional features.",
@@ -286,7 +286,7 @@
       {
         "product_id": "I005",
         "product_title": "iPhone SE (3rd Gen)",
-        "product_image": "iphone_se_3.jpg",
+        "product_image": "https://i.ibb.co.com/bgspD6L/Apple-i-Phone-SE-2020-White.jpg",
         "category": "iPhone",
         "price": 429,
         "description": "Compact and affordable with powerful performance.",
@@ -297,7 +297,7 @@
       {
         "product_id": "I006",
         "product_title": "iPhone 13 Pro Max",
-        "product_image": "iphone_13_pro_max.jpg",
+        "product_image": "https://i.ibb.co.com/hH4zP7D/promax-600x600.jpg",
         "category": "iPhone",
         "price": 1099,
         "description": "A large-screen iPhone with professional-grade cameras.",
@@ -308,7 +308,7 @@
       {
         "product_id": "I007",
         "product_title": "iPhone 13 Mini",
-        "product_image": "iphone_13_mini.jpg",
+        "product_image": "https://i.ibb.co.com/ZGcCyPM/i-Phone-13-mini-256-GB-4.jpg",
         "category": "iPhone",
         "price": 699,
         "description": "A compact iPhone with great features.",
@@ -321,7 +321,7 @@
       {
         "product_id": "M001",
         "product_title": "MacBook Air M2",
-        "product_image": "macbook_air_m2.jpg",
+        "product_image": "https://i.ibb.co.com/xfYdHMf/apple-macbook-air-13-inch-macbook-air-13-inch-m2-starlight-2022-fair-41944530616636-1080x.webp",
         "category": "MacBook",
         "price": 1199,
         "description": "Lightweight laptop with M2 chip for everyday productivity.",
@@ -332,7 +332,7 @@
       {
         "product_id": "M002",
         "product_title": "MacBook Pro 14-inch M2 Pro",
-        "product_image": "macbook_pro_14_m2_pro.jpg",
+        "product_image": "https://i.ibb.co.com/KjwYH50/apple-14-mbp-2023-intro.jpg",
         "category": "MacBook",
         "price": 1999,
         "description": "A compact MacBook for professionals.",
@@ -343,7 +343,7 @@
       {
         "product_id": "M003",
         "product_title": "MacBook Pro 16-inch M2 Max",
-        "product_image": "macbook_pro_16_m2_max.jpg",
+        "product_image": "https://i.ibb.co.com/JH85hV4/apple-macbook-pro-16-inch-macbook-pro-16-inch-m2-max-12-core-space-grey-2023-good-44234430120252-108.webp",
         "category": "MacBook",
         "price": 3299,
         "description": "A high-performance laptop for demanding tasks.",
@@ -354,7 +354,7 @@
       {
         "product_id": "M004",
         "product_title": "MacBook Air M1",
-        "product_image": "macbook_air_m1.jpg",
+        "product_image": "https://i.ibb.co.com/0Q2CsnB/macbook-air-m1-2023-10-c3ced763eda4931bd195f9e7ff255169-16x9.jpg",
         "category": "MacBook",
         "price": 999,
         "description": "An affordable MacBook with excellent performance.",
@@ -365,7 +365,7 @@
       {
         "product_id": "M005",
         "product_title": "MacBook Pro 13-inch M2",
-        "product_image": "macbook_pro_13_m2.jpg",
+        "product_image": "https://i.ibb.co.com/wJYnRTH/apple-macbook-air-13-inch-macbook-air-13-inch-m2-silver-2022-excellent-41671655981372-1080x.webp",
         "category": "MacBook",
         "price": 1299,
         "description": "Compact and powerful laptop with the M2 chip.",
@@ -376,7 +376,7 @@
       {
         "product_id": "M006",
         "product_title": "MacBook Pro 16-inch M1 Pro",
-        "product_image": "macbook_pro_16_m1_pro.jpg",
+        "product_image": "https://i.ibb.co.com/pQmnTLr/Mac-Book-Pro-16-Apple-M1-Max.jpg",
         "category": "MacBook",
         "price": 2499,
         "description": "Large display MacBook with professional-grade performance.",
@@ -387,7 +387,7 @@
       {
         "product_id": "M007",
         "product_title": "MacBook Air 15-inch M2",
-        "product_image": "macbook_air_15_m2.jpg",
+        "product_image": "https://i.ibb.co.com/8bytS6n/gsmarena-002.jpg",
         "category": "MacBook",
         "price": 1399,
         "description": "A larger MacBook Air for improved productivity.",
