@@ -9,7 +9,7 @@ const Home = () => {
         <div>
             {/* Banner */}
             <Banner />
-            <h1 className="text-[#0B0B0B] text-5xl font-bold text-center mb-14">Explore Cutting-Edge Gadgets</h1>
+            <h1 className="text-[#0B0B0B] text-5xl font-bold text-center mb-16">Explore Cutting-Edge Gadgets</h1>
 
             {/* Products Section */}
             <section className="flex  flex-col md:flex-col lg:flex-row  mx-auto gap-8 lg:w-8/12">
@@ -38,7 +38,7 @@ const Home = () => {
 
 
                 {/* Product Cards */}
-                <div className=" w-11/12 border-2 mx-auto">
+                <div className=" w-11/12  mx-auto">
                     <Outlet></Outlet>
                 </div>
             </section>

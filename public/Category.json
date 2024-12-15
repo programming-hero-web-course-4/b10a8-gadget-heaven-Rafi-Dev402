@@ -18,5 +18,9 @@
     {
       "id": 5,
       "category": "MacBook"
+    },
+    {
+      "id": 4,
+      "category": "Tablet"
     }
   ]

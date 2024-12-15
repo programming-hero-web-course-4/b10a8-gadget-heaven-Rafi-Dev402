@@ -14,10 +14,10 @@ const AllProducts = () => {
                     <Headding title="All Products Here" subTitle="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"></Headding>
                 </div>
                 <div className="flex justify-center mt-4">
-                    <button className="btn btn-outline lg:hover:bg-white hover:text-[#9538E2] border-2 border-white rounded-full px-10 text-lg font-semibold text-white" onClick={()=> homeNavigate('/')}>Home</button>
+                    <button className="btn btn-outline lg:hover:bg-white hover:border-none hover:text-[#9538E2] border-2 border-white rounded-full px-10 text-lg font-semibold text-white" onClick={()=> homeNavigate('/')}>Home</button>
                 </div>
             </div>
-            <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-6 container">
+            <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-6 container px-3">
 
                 {
                     products.map(product => <Card key={product.product_id} product={product} ></Card>)

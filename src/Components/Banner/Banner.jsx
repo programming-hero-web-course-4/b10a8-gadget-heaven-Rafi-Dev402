@@ -15,7 +15,8 @@ const Banner = () => {
                     </div>
 
                     <div className='flex justify-center items-center '>
-                        <button className='px-7 py-4 hover:bg-slate-100 text-xl font-bold text-[#9538E2] bg-white rounded-full'>Shop Now</button>
+                        {/* <button className="btn btn-outline  text-[#9538E2] border-2 bg-white border-[#9538E2] rounded-full px-6  text-lg font-semibold " >Shop Now</button> */}
+                        <button className="btn btn-lg   text-[#9538E2] border-2 bg-white border-[#9538E2] rounded-full px-7  text-xl font-semibold hover:text-white hover:bg-gray-800 border-none">Shop Now</button>
                     </div>
 
                 </div>

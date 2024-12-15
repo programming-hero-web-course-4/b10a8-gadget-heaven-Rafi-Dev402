@@ -16,7 +16,7 @@ const Card = ({product}) => {
                     <h2 className="card-title text-[#09080F] text-2xl font-bold mb-3">{product.product_title}</h2>
                     <p className="text-[#09080F99] text-xl font-semibold mb-4">Price: {product.price} $</p>
                     <div className="card-actions justify-start">
-                        <button className="px-5 py-3   text-[#9538E2] text-lg font-semibold rounded-full bg-white border-2 hover:bg-green-300">View Details</button>
+                        <button className="px-4 py-3   text-[#9538E2] text-lg font-semibold rounded-full bg-white border-2 hover:border-none hover:bg-gray-800 hover:text-white">View Details</button>
                         
                     </div>
                 </div>
