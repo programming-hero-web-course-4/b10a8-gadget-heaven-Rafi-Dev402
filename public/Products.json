@@ -30,7 +30,7 @@
       "price": 399,
       "description": "A performance-focused phone with fast charging.",
       "specification": ["6.8-inch AMOLED", "128GB Storage", "4600mAh Battery", "Qualcomm Snapdragon 7+ Gen 1"],
-      "availability": true,
+      "availability": false,
       "rating": 4.6
     },
     {
