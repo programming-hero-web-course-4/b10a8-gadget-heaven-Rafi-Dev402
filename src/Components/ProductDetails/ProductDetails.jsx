@@ -5,6 +5,8 @@ import { MdAttachMoney } from "react-icons/md";
 import ReactStars from "react-rating-stars-component";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
+import { addFavourite, getStorageData } from "../../Utilities/Index";
+import { addwishProduct } from "../../Utilities/wishList";
 
 
 const ProductDetails = () => {
@@ -12,17 +14,38 @@ const ProductDetails = () => {
     const productData = useLoaderData()
     const [productd, setProductd] = useState({})
 
+    //for Disable cart button
+    // const [isAdded,setisAdded] = useState(false)
     useEffect(() => {
         const singleProduct = productData.find(product => product.product_id === id)
         setProductd(singleProduct);
 
+        //for Disable cart button
+        // const storageData = getStorageData()
+        // const isExist = storageData.find(item=>item.product_id === singleProduct.product_id )
+        // if(isExist){
+        //     setisAdded(true)
+        // }
+
     }, [productData, id])
 
     const { product_title, product_image, price, description, specification, availability, rating } = productd;
+
+    //For rating sters
     const ratingChanged = (newRating) => {
-        console.log(newRating);
+
     };
 
+    //for add cart btn 
+    const handleFavourite = (favproduct) => {
+        addFavourite(favproduct)
+        // setisAdded(true)
+    }
+
+    //for add wishlist btn
+    const handleWishlistBtn = (wishproduct) => {
+        addwishProduct(wishproduct)
+    }
     return (
         <div>
             <div className="h-96 bg-[#9538E2] ">
@@ -31,9 +54,9 @@ const ProductDetails = () => {
                 </div>
             </div>
 
-            <div className="w-7/12 mx-auto border-2  p-4 py-5 rounded-2xl bg-white -mt-[200px]">
+            <div className="w-7/12 mx-auto border-2  px-6 py-6 rounded-2xl bg-white -mt-[200px]">
 
-                <div className="flex  items-center  gap-10">
+                <div className="flex md:flex-col lg:flex-row  items-center   gap-10">
                     {/* image  */}
                     <div className=" border-black">
                         <img className="rounded-2xl w-[450px] border" src={product_image} alt="" />
@@ -71,22 +94,21 @@ const ProductDetails = () => {
                         <div className="flex items-center gap-1 mb-3">
                             <ReactStars
                                 count={5}
-                                value={rating}
                                 onChange={ratingChanged}
-                                size={25}
+                                size={24}
                                 isHalf={true}
-                                emptyIcon={<i className="far fa-star size-36"></i>}
-                                halfIcon={<i className="fa fa-star-half-alt size-36"></i>}
-                                fullIcon={<i className="fa fa-star size-36"></i>}
+                                emptyIcon={<i className="far fa-star"></i>}
+                                halfIcon={<i className="fa fa-star-half-alt"></i>}
+                                fullIcon={<i className="fa fa-star"></i>}
                                 activeColor="#ffd700"
                             />
                             <span className="badge bg-[#09080F0D] text-sm font-medium border py-3">{rating}</span>
                         </div>
                         <div className="flex items-center gap-3">
-                            
-                            <button className="btn text-white bg-[#9538E2] rounded-full px-5  text-base font-semibold">Add To Cart <IoCartOutline className="text-xl" /></button>
-                            <button className="btn-circle btn bg-white rounded-full p-2 border"><CiHeart className="text-2xl " /></button>
-                            
+
+                            <button onClick={() => handleFavourite(productd)} className="btn text-white bg-[#9538E2] rounded-full px-5  text-base font-semibold">Add To Cart <IoCartOutline className="text-xl" /></button>
+                            <button onClick={() => handleWishlistBtn(productd)} className="btn-circle btn  rounded-full p-1 border bg-[#9d6ec4] "><CiHeart className="text-3xl text-white" /></button>
+                            {/* disabled = {isAdded} */}
                         </div>
 
                     </div>
