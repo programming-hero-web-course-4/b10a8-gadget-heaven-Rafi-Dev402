@@ -1,6 +1,12 @@
 import BannerImg from '../../assets/banner.jpg'
 
 const Banner = () => {
+    const handleScroll = () => {
+        window.scrollTo({
+            top: 1100, 
+            behavior: "smooth", 
+        });
+    };
     return (
         <div className=' mb-28'>
             <div className="lg:w-11/12 mx-auto p-2 backdrop-blur-3xl border-2  rounded-2xl">
@@ -16,7 +22,7 @@ const Banner = () => {
 
                     <div className='flex justify-center items-center '>
                         {/* <button className="btn btn-outline  text-[#9538E2] border-2 bg-white border-[#9538E2] rounded-full px-6  text-lg font-semibold " >Shop Now</button> */}
-                        <button className="btn btn-lg   text-[#9538E2] border-2 bg-white border-[#9538E2] rounded-full px-7  text-xl font-semibold hover:text-white hover:bg-gray-800 border-none">Shop Now</button>
+                        <button onClick={handleScroll} className="btn btn-lg   text-[#9538E2] border-2 bg-white border-[#9538E2] rounded-full px-7  text-xl font-semibold hover:text-white hover:bg-gray-800 border-none">Shop Now</button>
                     </div>
 
                 </div>

@@ -1,19 +1,35 @@
-import { Outlet } from "react-router-dom";
+
 import Headding from "../Headding/Headding";
 import Cart from "../Cart/Cart";
 import WishList from "../Wishlist/WishList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getStorageData } from "../../Utilities/Index";
+import { getStorageDataWish } from "../../Utilities/wishList";
+
 
 
 const Dashboard = () => {
+
     const [page,setPage] = useState(true);
     const handleCartWishBtn = (value) =>{
         setPage(value)
     }
-    console.log(page)
+
+
+    const [storageCartData,setstorageCartData] = useState([]);
+    const [storageWishData,setstorageWishData] = useState([])
+    useEffect(()=>{
+        const sCartData = getStorageData()
+        setstorageCartData(sCartData)
+
+        const sWishData = getStorageDataWish()
+        setstorageWishData(sWishData)
+    },[])
+    console.log(storageWishData)
+    
     return (
         <div>
-            <div className="h-64 bg-[#9538E2] ">
+            <div className="h-60 bg-[#9538E2] ">
                 <div className="pt-8">
                     <div className="mb-8">
                         <Headding title={"Dashboard"} subTitle={"Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"}></Headding>
@@ -26,9 +42,9 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            <div>
+            <div className="container mx-auto">
                {
-                (page)? <Cart></Cart> : <WishList></WishList>
+                (page)? <Cart storageCartData={storageCartData}></Cart> : <WishList storageWishData={storageWishData}></WishList>
                }
             </div>
 

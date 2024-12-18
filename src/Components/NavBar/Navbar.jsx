@@ -1,6 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
+import { getStorageData } from "../../Utilities/Index";
+// import { getStorageDataWish } from "../../Utilities/wishList";
+import { useState } from "react";
 
 
 const Navbar = () => {
@@ -19,11 +22,30 @@ const Navbar = () => {
         <li><NavLink className={({ isActive }) => ` text-base font-medium mr-5 ${isActive ? 'text-[#9538E2] font-semibold' :  'hover:text-[#9538E2]'}`} to='/AllProducts'>All Products</NavLink></li>
 
     </>
+    
+    // //For cart item count
+//     const [cartCount,setCartCount] = useState(0)
+    
+//     const cartCountFunction =(cartData)=>{
+//         const cartStorageData = cartData.length
+//         setCartCount(cartStorageData.length)
+//     }
+//    console.log(cartCount)
+    // //For wishlist item count
+    
+    // // const [wishCount,setWishcount] = useState(0)
+    // // const wishCountFunction = ()=>{
+    // //     const wishListStorageData = getStorageDataWish()
+    // //     setWishcount(wishListStorageData.length)
+    // // }
+    // // console.log(wishCount)
+    
+
 
     return (
         <div className=" backdrop:blur-3xl  sticky top-0 z-20 bg-white">
 
-            <div className="pt-6 pb-6 mb-7 lg:w-11/12 mx-auto">
+            <div className="pt-4  pb-4 lg:w-11/12 mx-auto">
                 <div className="navbar   ">
                     <div className="navbar-start">
                         <div className="dropdown">

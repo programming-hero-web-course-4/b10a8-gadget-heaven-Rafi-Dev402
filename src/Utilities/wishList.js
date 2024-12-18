@@ -1,6 +1,6 @@
 import toast from "react-hot-toast";
 
-const getStorageData =()=>{
+const getStorageDataWish =()=>{
     const allData = localStorage.getItem('wishList')
     
     if(allData){
@@ -12,7 +12,7 @@ const getStorageData =()=>{
 }
 
 const addwishProduct = (wishProduct)=>{
-    const wishListProduct = getStorageData();
+    const wishListProduct = getStorageDataWish();
     
     const isExists = wishListProduct.find(itemWish => itemWish.product_id === wishProduct.product_id);
     if(isExists){
@@ -26,4 +26,4 @@ const addwishProduct = (wishProduct)=>{
 }
 
 
-export {addwishProduct,getStorageData}
+export {addwishProduct,getStorageDataWish}
