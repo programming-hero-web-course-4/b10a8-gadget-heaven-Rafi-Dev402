@@ -8,7 +8,7 @@ const Root = () => {
     // bg-[#ECECEC]
     return (
         <div>
-            <Toaster></Toaster>
+            <Toaster  position="top-right" ></Toaster>
            <Navbar></Navbar>
 
             <div className="min-h-[calc(100vh-550px)] bg-[#ECECEC] pb-28">

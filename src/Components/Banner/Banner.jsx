@@ -3,7 +3,7 @@ import BannerImg from '../../assets/banner.jpg'
 const Banner = () => {
     const handleScroll = () => {
         window.scrollTo({
-            top: 1100, 
+            top: 1200, 
             behavior: "smooth", 
         });
     };

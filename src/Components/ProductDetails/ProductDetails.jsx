@@ -5,7 +5,7 @@ import { MdAttachMoney } from "react-icons/md";
 import ReactStars from "react-rating-stars-component";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
-import { addFavourite, getStorageData } from "../../Utilities/Index";
+import { addFavourite } from "../../Utilities/Index";
 import { addwishProduct } from "../../Utilities/wishList";
 
 
@@ -67,7 +67,7 @@ const ProductDetails = () => {
                         <div className="flex items-center mb-4">
                             <span className="text-xl font-semibold text-[#09080FCC]">Price :</span>
                             <span ><MdAttachMoney className="text-xl font-semibold text-[#09080FCC]" /></span>
-                            <span className="text-xl font-semibold text-[#09080FCC]">{price}.00</span>
+                            <span className="text-xl font-semibold text-[#09080FCC]">{price}</span>
                         </div>
                         <div className="mb-4">
                             {

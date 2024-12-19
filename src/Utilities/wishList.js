@@ -1,3 +1,4 @@
+import { duration } from "@mui/material";
 import toast from "react-hot-toast";
 
 const getStorageDataWish =()=>{
@@ -22,7 +23,20 @@ const addwishProduct = (wishProduct)=>{
 
     wishListProduct.push(wishProduct)
     localStorage.setItem('wishList',JSON.stringify(wishListProduct))
-    toast.success('Added in Wish List');
+    // toast.success('Added in Wish List');
+    toast('Added in Wish List',
+        {
+          icon: '✅',
+          style: {
+            borderRadius: '10px',
+            background: '#333',
+            color: '#fff',
+            
+          },
+        },
+        
+      );
+    
 }
 
 

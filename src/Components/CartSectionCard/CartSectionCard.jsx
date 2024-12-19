@@ -1,9 +1,9 @@
 
 
 // eslint-disable-next-line react/prop-types
-const CartSectionCard = ({ sData }) => {
+const CartSectionCard = ({ sData,handleRemove }) => {
     // eslint-disable-next-line react/prop-types
-    const { product_title, price, description,product_image    } = sData;
+    const { product_title, price, description,product_image,product_id    } = sData;
     return (
         <div>
 
@@ -30,7 +30,7 @@ const CartSectionCard = ({ sData }) => {
 
                     {/* Cross Button */}
                     <div>
-                        <button className="btn btn-circle p-1 bg-white border-red-600">
+                        <button onClick={()=>handleRemove(product_id)} className="btn btn-circle p-1 bg-white border-red-600">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-6 w-6"
