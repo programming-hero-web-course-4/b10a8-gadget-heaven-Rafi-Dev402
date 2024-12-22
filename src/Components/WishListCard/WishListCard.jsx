@@ -1,4 +1,4 @@
-
+import { BsCurrencyDollar } from "react-icons/bs";
 
 
 const WishListCard = ({wishPro,handleRemoveCartBtn}) => {
@@ -23,7 +23,7 @@ const WishListCard = ({wishPro,handleRemoveCartBtn}) => {
                         <div>
                             <h3 className="mb-4 text-[#09080F] text-xl font-semibold">{product_title}</h3>
                             <p className="mb-4 text-[#09080F] text-lg font-normal"> Description: {description}<span className="text-[#09080F99] text-lg font-normal"></span></p>
-                            <p className="text-[#09080FCC] text-xl font-semibold mb-4">Price: {price}</p>
+                            <p className="text-[#09080FCC] text-xl font-semibold mb-4 flex items-center">Price: <BsCurrencyDollar /> {price}.00</p>
                             {/* Add to cart button */}
                             <button className="btn btn-sm rounded-full px-4 bg-[#9538E2] text-white">Add To Cart</button>
                         </div>

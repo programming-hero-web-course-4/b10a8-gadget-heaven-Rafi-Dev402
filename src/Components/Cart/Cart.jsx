@@ -80,13 +80,13 @@ const Cart = () => {
                         <div>
                             <button
                                 onClick={handleSortBtn}
-                                className="btn btn-outline rounded-full border-[#9538E2] text-[#9538E2] text-base px-6"
+                                className="btn btn-outline rounded-full border-[#9538E2] text-[#9538E2] text-base px-5"
                             >
                                 Sort By Price <GiSettingsKnobs className="text-lg font-semibold" />
                             </button>
                         </div>
                         <div>
-                            <button onClick={handlePurchase} className="btn text-white text-base font-semibold bg-[#9538E2] rounded-full px-6">
+                            <button onClick={handlePurchase} className="btn bg-gradient-to-tl from-orange-700 text-white text-base font-semibold bg-[#9538E2] rounded-full px-6">
                                 Purchase
                             </button>
                         </div>

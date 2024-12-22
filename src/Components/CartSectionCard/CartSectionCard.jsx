@@ -1,4 +1,4 @@
-
+import { BsCurrencyDollar } from "react-icons/bs";
 
 // eslint-disable-next-line react/prop-types
 const CartSectionCard = ({ sData,handleRemove }) => {
@@ -21,7 +21,7 @@ const CartSectionCard = ({ sData,handleRemove }) => {
                             <div>
                                 <h3 className="mb-4 text-[#09080F] text-xl font-semibold">{product_title}</h3>
                                 <p className="mb-4 text-[#09080F99] text-lg font-normal">{description}</p>
-                                <p className="text-[#09080FCC] text-xl font-semibold">Price: {price}</p>
+                                <p className="text-[#09080FCC] text-xl font-semibold flex items-center">Price: <BsCurrencyDollar /> {price}.00</p>
                             </div>
                             {/* Cross Button */}
 
