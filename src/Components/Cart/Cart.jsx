@@ -2,14 +2,24 @@ import { GiSettingsKnobs } from "react-icons/gi";
 import CartSectionCard from "../CartSectionCard/CartSectionCard";
 import { useEffect, useState } from "react";
 import { getStorageData, removeProduct } from "../../Utilities/Index";
+import toast from "react-hot-toast/headless";
+import { Toaster } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
+
+
+
 
 const Cart = () => {
-    // State to manage cart data
+    const homeNavigate = useNavigate()
+
+    //For cart Data
     const [cartData, setCartData] = useState([]);
+    //For view total Cost
     const [totalCost, setTotalCost] = useState(0);
+    //For sort by Price
     const [sortPrice, setSortPrice] = useState([]);
 
-    // Load initial cart data from localStorage
+
     useEffect(() => {
         const initialCartData = getStorageData();
         setCartData(initialCartData);
@@ -31,13 +41,32 @@ const Cart = () => {
     // Remove a product from the cart
     const handleRemove = (id) => {
         removeProduct(id); // Remove product from localStorage
-        const updatedCartData = getStorageData(); // Get updated data
+        const updatedCartData = getStorageData();
         setCartData(updatedCartData);
-        setSortPrice(updatedCartData); // Reset sorting after removal
+        setSortPrice(updatedCartData);
     };
+    //Handle purches
+    const handlePurchase = () => {
+        if (cartData.length === 0 || sortPrice.length === 0) {
+
+            return toast
+        }
+        else {
+            document.getElementById("my_modal_1").showModal()
+
+        }
+
+    }
+    //
+    const handleCloseBtn = () => {
+        localStorage.removeItem('cart');
+        setCartData([])
+        setSortPrice([])
+    }
 
     return (
         <div>
+            <Toaster position="top-right" ></Toaster>
             <div className="w-9/12 mx-auto">
                 {/* Header Section */}
                 <div className="mt-6 flex justify-between items-center mb-10">
@@ -57,7 +86,7 @@ const Cart = () => {
                             </button>
                         </div>
                         <div>
-                            <button className="btn text-white text-base font-semibold bg-[#9538E2] rounded-full px-6">
+                            <button onClick={handlePurchase} className="btn text-white text-base font-semibold bg-[#9538E2] rounded-full px-6">
                                 Purchase
                             </button>
                         </div>
@@ -77,9 +106,9 @@ const Cart = () => {
 
 
             {/* Modal */}
-            <button className="btn" onClick={() => document.getElementById("my_modal_1").showModal()}>
+            {/* <button className="btn" onClick={() => document.getElementById("my_modal_1").showModal()}>
                 open modal
-            </button>
+            </button> */}
             <dialog id="my_modal_1" className="modal">
                 <div className="modal-box">
                     {/* Modal Content */}
@@ -100,11 +129,16 @@ const Cart = () => {
                     </p>
                     <div className="modal-action">
                         <form method="dialog" className="mx-auto">
-                            <button className="btn btn-wide">Close</button>
+                            <button onClick={() => {
+                                homeNavigate('/');
+                                handleCloseBtn()
+
+                            }} className="btn btn-wide">Close</button>
                         </form>
                     </div>
                 </div>
             </dialog>
+
         </div>
     );
 };

@@ -1,10 +1,12 @@
 
 
-// eslint-disable-next-line react/prop-types
-const WishListCard = ({storageWishData}) => {
-   // eslint-disable-next-line react/prop-types
-   const {product_title,product_image,description,price   }=storageWishData;
-   console.log(storageWishData)
+
+const WishListCard = ({wishPro,handleRemoveCartBtn}) => {
+  
+    const {product_id,product_title,description,price,product_image} = wishPro
+  
+   
+   
     return (
         <div>
 
@@ -31,7 +33,7 @@ const WishListCard = ({storageWishData}) => {
 
                 {/* Cross Button */}
                 <div>
-                    <button className="btn btn-circle p-1 bg-white border-red-600">
+                    <button onClick={()=>handleRemoveCartBtn(product_id)}  className="btn btn-circle p-1 bg-white border-red-600">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-6 w-6"

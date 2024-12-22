@@ -5,6 +5,7 @@ import WishList from "../Wishlist/WishList";
 import { useEffect, useState } from "react";
 import { getStorageData } from "../../Utilities/Index";
 import { getStorageDataWish } from "../../Utilities/wishList";
+import { Toaster } from "react-hot-toast";
 
 
 
@@ -25,10 +26,11 @@ const Dashboard = () => {
         const sWishData = getStorageDataWish()
         setstorageWishData(sWishData)
     },[])
-    console.log(storageWishData)
+    
     
     return (
         <div>
+            <Toaster  position="top-right" ></Toaster>
             <div className="h-60 bg-[#9538E2] ">
                 <div className="pt-8">
                     <div className="mb-8">
@@ -42,7 +44,7 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto">
+            <div className="container mx-auto ">
                {
                 (page)? <Cart storageCartData={storageCartData}></Cart> : <WishList storageWishData={storageWishData}></WishList>
                }

@@ -1,7 +1,25 @@
-import WishListCard from "../WishListCard/WishListCard";
+import { useEffect, useState } from "react";
+import WishListCard from "../WishListCard/WishListCard"
+import { getStorageDataWish, removeWishItem } from "../../Utilities/wishList";
 
 
-const WishList = ({storageWishData}) => {
+const WishList = () => {
+
+    const [wishListData,SetWishlistData] = useState([])
+    useEffect(()=>{
+        const storagecartdata = getStorageDataWish()
+        SetWishlistData(storagecartdata);
+
+    },[])
+    
+    const handleRemoveCartBtn = (id)=>{
+        removeWishItem(id)
+        const storagecartdata = getStorageDataWish()
+        SetWishlistData(storagecartdata);
+    }
+   
+
+    //Remove btn function wishlist
     
     return (
         <div className="w-9/12 mx-auto">
@@ -12,11 +30,11 @@ const WishList = ({storageWishData}) => {
 
             {/* Cards container */}
             <div>
-                {
-                    // eslint-disable-next-line react/prop-types
-                    storageWishData.map(storageWishData=> <WishListCard key={storageWishData.product_title} storageWishData={storageWishData}></WishListCard>)
-                }
-               
+
+            {
+                wishListData.map(wishP=><WishListCard key={wishP.product_id} handleRemoveCartBtn={handleRemoveCartBtn} wishPro={wishP}></WishListCard>)
+            }
+                
 
             </div>
 

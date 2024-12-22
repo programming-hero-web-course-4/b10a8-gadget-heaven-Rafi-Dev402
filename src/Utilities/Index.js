@@ -23,11 +23,12 @@ const addFavourite = (favproduct)=>{
     localStorage.setItem('cart',JSON.stringify(cartProduct))
     toast.success('Added in cart');
 }
-//
+
 // Remove a Product from LocalStorage
 const removeProduct=(id)=>{
     const cartProduct = getStorageData();
     const remaining = cartProduct.filter(productD=> productD.product_id != id)
+    
     localStorage.setItem('cart',JSON.stringify(remaining))
     toast.success('Successfully Removed');
 
