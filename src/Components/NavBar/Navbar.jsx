@@ -2,8 +2,9 @@ import { NavLink } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
 import { getStorageData } from "../../Utilities/Index";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { getStorageDataWish } from "../../Utilities/wishList";
+import { dataContext } from "../ContexProvider";
 
 const Navbar = () => {
     const links = (
@@ -15,32 +16,13 @@ const Navbar = () => {
         </>
     );
 
-    const [cartNumber, setCartnumber] = useState(getStorageData());
-    const [wishNumber, setwishnumber] = useState(getStorageDataWish());
+    const {favNum, setFavNum, wishNum, setWishNum} = useContext(dataContext);
 
     
-    useEffect(() => {
-        const cartNum = getStorageData();
-        setCartnumber(cartNum);
-        const wishNum = getStorageDataWish();
-        setwishnumber(wishNum);
-    }, []); 
-
-    
-    const handleCartUpdate = () => {
-        const updatedCart = getStorageData();
-        setCartnumber(updatedCart);
-    };
-
-    
-    const handleWishListUpdate = () => {
-        const updatedWish = getStorageDataWish();
-        setwishnumber(updatedWish);
-    };
 
     return (
-        <div className="backdrop:blur-3xl sticky top-0 z-20 bg-white">
-            <div className="pt-4 pb-4 lg:w-11/12 mx-auto">
+        <div className="backdrop:blur-3xl sticky top-0 z-20 bg-white ">
+            <div className="pt-4 pb-4 lg:w-11/12  mx-auto">
                 <div className="navbar">
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -66,7 +48,7 @@ const Navbar = () => {
                                 <IoCartOutline className="text-2xl" />
                             </div>
                             <div className="-mt-2 -ml-2">
-                                <span className="bg-gray-50 p-1 rounded-full font-bold text-lg">{cartNumber.length}</span>
+                                <span className="bg-gray-50 p-1 rounded-full font-bold text-lg">{setFavNum}</span>
                             </div>
                         </div>
 
@@ -75,7 +57,7 @@ const Navbar = () => {
                                 <MdOutlineFavoriteBorder className="text-2xl" />
                             </div>
                             <div className="-mt-2 -ml-2">
-                                <span className="bg-gray-50 p-1 rounded-full font-bold text-lg">{wishNumber.length}</span>
+                                <span className="bg-gray-50 p-1 rounded-full font-bold text-lg">{wishNum}</span>
                             </div>
                         </div>
                     </div>

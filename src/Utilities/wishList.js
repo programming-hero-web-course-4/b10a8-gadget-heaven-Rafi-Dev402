@@ -14,12 +14,14 @@ const getStorageDataWish = () => {
 
 const addwishProduct = (wishProduct) => {
   const wishListProduct = getStorageDataWish();
+  
 
   const isExists = wishListProduct.find(itemWish => itemWish.product_id === wishProduct.product_id);
   if (isExists) {
+  
     return toast.error('This Product is already added Wish List!');
   }
-
+ 
 
   wishListProduct.push(wishProduct)
   localStorage.setItem('wishList', JSON.stringify(wishListProduct))

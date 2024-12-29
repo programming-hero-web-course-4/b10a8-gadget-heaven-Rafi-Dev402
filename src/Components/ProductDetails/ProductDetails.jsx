@@ -1,12 +1,14 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Headding from "../Headding/Headding";
 import { MdAttachMoney } from "react-icons/md";
 import ReactStars from "react-rating-stars-component";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
-import { addFavourite } from "../../Utilities/Index";
-import { addwishProduct } from "../../Utilities/wishList";
+import { addFavourite, getStorageData } from "../../Utilities/Index";
+import { addwishProduct, getStorageDataWish } from "../../Utilities/wishList";
+import { Helmet } from "react-helmet-async";
+import { dataContext } from "../ContexProvider";
 
 
 const ProductDetails = () => {
@@ -36,18 +38,29 @@ const ProductDetails = () => {
 
     };
 
+    const { wishNum, setWishNum} = useContext(dataContext)
     //for add cart btn 
     const handleFavourite = (favproduct) => {
         addFavourite(favproduct)
-        // setisAdded(true)
+
+        const fav = getStorageData()
+        
     }
 
     //for add wishlist btn
     const handleWishlistBtn = (wishproduct) => {
         addwishProduct(wishproduct)
+
+        const wish = getStorageDataWish();
+        setWishNum(wish.length)
+        console.log(wishNum)
+        
     }
     return (
         <div>
+            <Helmet>
+                <title>{product_title}</title>
+            </Helmet>
             <div className="h-96 bg-[#9538E2] ">
                 <div className="pt-8">
                     <Headding title={"Product Details"} subTitle={"Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"}></Headding>

@@ -1,6 +1,7 @@
 import { useLoaderData, useNavigate } from "react-router-dom";
 import Card from "../Card/Card";
 import Headding from "../Headding/Headding";
+import { Helmet } from "react-helmet-async";
 
 
 const AllProducts = () => {
@@ -9,6 +10,9 @@ const AllProducts = () => {
 
     return (
         <>
+        <Helmet>
+            <title>Gadget Haven | All Products</title>
+        </Helmet>
             <div className="bg-[#9538E2] h-60 mb-8 ">
                 <div className="py-5">
                     <Headding title="All Products Here" subTitle="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"></Headding>
@@ -22,6 +26,7 @@ const AllProducts = () => {
                 {
                     products.map(product => <Card key={product.product_id} product={product} ></Card>)
                 }
+                
             </div>
 
         </>
